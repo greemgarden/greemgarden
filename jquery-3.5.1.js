@@ -10791,6 +10791,16 @@ jQuery.isFunction = isFunction;
 jQuery.isWindow = isWindow;
 jQuery.camelCase = camelCase;
 jQuery.type = toType;
+	
+	
+jQuery( '#copy-url' ).click(
+   function() {
+        var urlbox = document.getElementById( 'textbox-url' );
+        urlbox.select();
+        document.execCommand( 'Copy' );
+        alert( 'URL 이 복사 되었습니다.' );
+    }
+);
 
 jQuery.now = Date.now;
 
